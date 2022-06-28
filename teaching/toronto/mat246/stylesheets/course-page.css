@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+body {
+  font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #002A5C;
+  overflow-x: hidden;
+  padding-top: 26px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #7BA4D9;
+}
+
+.sidenav h1 {
+  padding-bottom: 0px;
+  margin: 0;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidebar */
+  padding: 0px 20px;
+}
+
+
+.topmobile {
+  display: none;
+}
+
+.topmobile h3 {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+
+header {
+  width:240px;
+  float:left;
+  position:fixed;
+}
+
+section {
+  width:700px;
+  float:right;
+  padding-bottom: 20em;
+}
+
+.main h1 {
+  font-size:32px;
+  text-align: center;
+  margin:0 0 0px;
+  line-height:1.1;
+}
+
+.topmobile h1 {
+  font-size:32px;
+  text-align: center;
+  margin:0 0 0px;
+  line-height:1.1;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-bottom: 5px;
+}
+
+header h2 {
+  margin-top: 4em;
+}
+
+header h3 {
+  font-size: medium;
+  margin: 0 0 5px 0px;
+}
+
+p {
+  margin: 5px 0 0 20px;
+}
+
+.item {
+  margin: 0 0 0 90px;
+  white-space: nowrap;
+}
+
+a {
+  color: #2e8ab8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+}
+
+header a {
+  color: black;
+}
+
+h2.a {
+  color: black;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.title {
+  font-weight: bold;
+  flex: 0 0 120px;
+  margin-left: 20px;
+}
+
+.content {
+  flex: 1px;
+}
+
+@media print, screen and (max-width: 800px) {
+
+  .sidenav {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .main h1 {
+    display: none;
+  }
+
+  div.topmobile {
+    display: block;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  header, section {
+    float: none;
+    position: static;
+    width: auto;
+  }
+
+  header h2 {
+    margin-top: 5px;
+  }
+  
+  section h1 {
+    display: none;
+  }
+
+  .title {
+    flex: 0 0 100px;
+  }
+}
